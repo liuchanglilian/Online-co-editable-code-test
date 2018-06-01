@@ -1,0 +1,36 @@
+<!-- Nav pills -->
+<div class="container">
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="pill" href="#profile">Personal Information</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="pill" href="#password">Change Password</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="profile">
+    <div class="form-group">
+      <label for="email">
+        Email
+      </label>
+      <input type="text" class="form-control" id="email" name="email"
+            value="{{email}}"/>
+    </div>
+    <div class="form-group">
+      <label for="nickname">
+        Nickname
+      </label>
+      <input type="text" class="form-control" id="nickname" name="nickname"
+             value="{{nickname}}"/>
+    </div>
+  </div>
+  <div class="tab-pane container fade" id="password">
+    <form class="navbar-form">
+      <button type="button" class = "btn btn-large btn-success" (click)="resetPassword()">Reset pass word via email</button>
+    </form>
+  </div>
+</div>
+</div>
